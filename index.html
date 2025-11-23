@@ -603,5 +603,208 @@
             }
         });
     </script>
+
+    <!-- AI AUTOMATION AGENCY LEAD CAPTURE POPUP -->
+<style>
+  /* Widgetify Floating Button */
+  .widgetify-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #050505;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 10000;
+    border: none;
+  }
+  .widgetify-widget:hover { transform: scale(1.05); }
+
+  /* Overlay */
+  .lead-popup-overlay {
+    position: fixed; top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.45);
+    display:none; justify-content:center; align-items:center;
+    z-index:10000; backdrop-filter:blur(3px);
+  }
+  .lead-popup-overlay.show { display:flex; }
+
+  /* Popup */
+  .widgetify-popup {
+    background:white; border-radius:16px;
+    width:90%; max-width:420px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+    padding:28px;
+    animation:slideUp 0.28s ease;
+    position:relative;
+  }
+  @keyframes slideUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+
+  .widgetify-close {
+    position:absolute; top:16px; right:16px;
+    background:none; border:none; font-size:24px;
+    cursor:pointer; color:#9ca3af;
+    width:32px; height:32px; border-radius:50%;
+  }
+
+  .lead-popup-title {
+    font-size:24px; font-weight:700; text-align:center; color:#111827;
+    margin-bottom:8px;
+  }
+  .lead-popup-subtitle {
+    font-size:15px; text-align:center; color:#6b7280;
+    margin-bottom:24px;
+  }
+
+  .lead-form-field {
+    width:100%; padding:14px;
+    border:1.8px solid #e5e7eb;
+    border-radius:12px;
+    margin-bottom:16px;
+    font-size:15px; outline:none;
+    transition:0.2s;
+  }
+  .lead-form-field:focus {
+    border-color:#050505;
+    box-shadow:0 0 0 3px #05050520;
+  }
+
+  .lead-form-button {
+    width:100%; padding:16px;
+    background:linear-gradient(135deg,#050505 0%,#050505dd 100%);
+    color:white; font-size:16px; font-weight:600;
+    border-radius:12px; border:none;
+    cursor:pointer; transition:0.3s;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+  }
+  .lead-form-button:hover {
+    transform:translateY(-2px);
+    box-shadow:0 8px 25px #05050540;
+  }
+
+  .widgetify-watermark {
+    margin-top:16px; text-align:center;
+    font-size:11px; color:#6b7280;
+  }
+  .widgetify-watermark a { color:#6b7280; text-decoration:none; }
+</style>
+
+<!-- Floating Widget Button -->
+<button id="widgetify-button" class="widgetify-widget" aria-expanded="false">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+</button>
+
+<!-- Popup -->
+<div id="lead-capture-overlay" class="lead-popup-overlay">
+  <div id="widgetify-popup" class="widgetify-popup">
+
+    <button class="widgetify-close" id="widgetify-close">×</button>
+
+    <h2 class="lead-popup-title">Unlock AI-Powered Growth for Your Business</h2>
+    <p class="lead-popup-subtitle">
+      Share your details — we’ll analyze your workflow and show you how automation can save you time, money, and manual effort.
+    </p>
+
+    <!-- STRATEGIC FORM -->
+    <form id="lead-capture-form">
+
+      <input type="text" name="name" placeholder="Enter Your Name *" required class="lead-form-field" />
+
+      <input type="tel" name="phone" placeholder="Your Best Contact Number *" required class="lead-form-field" />
+
+      <input type="text" name="business" placeholder="Your Business / Industry" class="lead-form-field" />
+
+      <textarea name="message" placeholder="What do you want us to automate? (Explain briefly)" rows="3" class="lead-form-field"></textarea>
+
+      <button type="submit" class="lead-form-button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/>
+        </svg>
+        Get My Automation Plan
+      </button>
+    </form>
+
+    <div class="widgetify-watermark">
+      <a href="https://widgetify-two.vercel.app" target="_blank">Powered by Widgetify</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const widgetBtn = document.getElementById("widgetify-button");
+  const overlay = document.getElementById("lead-capture-overlay");
+  const popup = document.getElementById("widgetify-popup");
+  const closeBtn = document.getElementById("widgetify-close");
+  const form = document.getElementById("lead-capture-form");
+
+  // Your WhatsApp Number (with country code, no +)
+  const WHATSAPP = "919656778508";
+
+  function openPopup() {
+    overlay.classList.add("show");
+    widgetBtn.setAttribute("aria-expanded", "true");
+    popup.querySelector("input").focus();
+  }
+
+  function closePopup() {
+    overlay.classList.remove("show");
+    widgetBtn.setAttribute("aria-expanded", "false");
+  }
+
+  widgetBtn.addEventListener("click", () => {
+    overlay.classList.contains("show") ? closePopup() : openPopup();
+  });
+
+  closeBtn.addEventListener("click", closePopup);
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) closePopup(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closePopup(); });
+
+  // Auto-show after 5s
+  setTimeout(() => {
+    if (!localStorage.getItem("leadPopupShown")) {
+      openPopup();
+      localStorage.setItem("leadPopupShown", "true");
+    }
+  }, 5000);
+
+  // Handle form submission
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const name = data.get("name");
+    const phone = data.get("phone");
+    const business = data.get("business");
+    const message = data.get("message");
+
+    let text = "🤖 *New Automation Lead!*%0A%0A";
+    text += "👤 *Name:* " + encodeURIComponent(name) + "%0A";
+    text += "📞 *Phone:* " + encodeURIComponent(phone) + "%0A";
+    if (business) text += "🏢 *Business / Industry:* " + encodeURIComponent(business) + "%0A";
+    if (message) text += "⚙️ *Automation Needed:* " + encodeURIComponent(message) + "%0A";
+    text += "%0A⏰ *Time:* " + encodeURIComponent(new Date().toLocaleString());
+    text += "%0A%0A🚀 _Lead captured via AI Automation Widget_";
+
+    const url = "https://wa.me/" + WHATSAPP + "?text=" + text;
+
+    window.open(url, "_blank");
+
+    alert("✅ Thank you! Your automation request has been sent. We’ll contact you soon.");
+    closePopup();
+    form.reset();
+  });
+})();
+</script>
+
+    
 </body>
 </html>
