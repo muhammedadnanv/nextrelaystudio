@@ -6,7 +6,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="icon" type="image/png" href="image-removebg-preview.png" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <style>
         /* Theme Configuration */
@@ -114,13 +113,15 @@
             </a>
             
             <div class="hidden md:flex items-center gap-8">
+                
+                <a href="https://nextrelaystudio.vercel.app/#hero" class="text-xs font-medium text-gray-400 hover:text-white transition-colors">Home</a>
                 <a href="#products" class="text-xs font-medium text-gray-400 hover:text-white transition-colors">Templates</a>
                 <a href="#features" class="text-xs font-medium text-gray-400 hover:text-white transition-colors">Features</a>
                 <a href="#pricing" class="text-xs font-medium text-gray-400 hover:text-white transition-colors">Pricing</a>
             </div>
 
             <div class="flex items-center gap-3">
-                <a href="https://adnanmuhammad4.gumroad.com" target="_blank" class="hidden md:block text-xs font-medium text-gray-400 hover:text-white transition-colors">Login</a>
+                <a href="https://partners.relay.app/nextrelay-studio/contact" target="_blank" class="hidden md:block text-xs font-medium text-gray-400 hover:text-white transition-colors">Login</a>
                 <a href="#products" class="bg-white text-black hover:bg-gray-200 px-4 py-2 rounded-lg text-xs font-bold transition-all duration-300">
                     Get Templates
                 </a>
@@ -184,124 +185,260 @@
         </div>
     </section>
 
-    <!-- Flagship Products Section -->
-    <section id="products" class="py-24 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-3xl font-semibold tracking-tight text-white mb-2">Flagship Templates</h2>
-                    <p class="text-gray-400">Production-ready agents you can deploy today.</p>
+   
+<!-- Flagship Products Section -->
+<section id="products" class="py-24 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl font-semibold tracking-tight text-white mb-2">Flagship Templates</h2>
+                <p class="text-gray-400">Production-ready agents you can deploy today.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+
+            <!-- Product 1: Review Response AI -->
+            <div class="group product-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="window.open('https://adnanmuhammad4.gumroad.com/l/googlebussinessai', '_blank')">
+
+                <!-- Visual -->
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 h-64 relative flex items-center justify-center overflow-hidden border-b border-white/5 group-hover:bg-white/5 transition-colors duration-500">
+
+                    <div class="bg-[#0A0A0A] rounded-xl border border-white/10 p-5 w-full max-w-sm transform group-hover:scale-[1.02] transition-transform duration-500 shadow-2xl">
+
+                        <div class="flex items-start gap-3 mb-4">
+                            <div class="w-8 h-8 rounded-full bg-orange-900/30 border border-orange-500/20 flex items-center justify-center shrink-0 text-orange-400 font-bold text-xs">
+                                A
+                            </div>
+
+                            <div class="flex-1">
+                                <div class="h-2 w-24 bg-white/10 rounded-full mb-1"></div>
+                                <div class="flex gap-0.5">
+                                    <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
+                                    <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
+                                    <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
+                                    <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
+                                    <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
+                                </div>
+                            </div>
+
+                            <div class="p-1.5 bg-green-500/10 rounded-md">
+                                <svg class="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2 mb-4">
+                            <div class="h-2 w-full bg-white/5 rounded-full"></div>
+                            <div class="h-2 w-5/6 bg-white/5 rounded-full"></div>
+                        </div>
+
+                        <div class="bg-blue-500/10 rounded-lg p-3 border border-blue-500/20">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="sparkles" class="w-3 h-3 text-blue-400"></i>
+                                <span class="text-[10px] font-semibold text-blue-400 uppercase">AI Generated Reply</span>
+                            </div>
+                            <div class="space-y-1.5">
+                                <div class="h-1.5 w-full bg-blue-400/20 rounded-full"></div>
+                                <div class="h-1.5 w-full bg-blue-400/20 rounded-full"></div>
+                                <div class="h-1.5 w-3/4 bg-blue-400/20 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="p-1.5 bg-blue-500/10 border border-blue-500/20 rounded-md">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Reputation Management</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-2">Review Response AI</h3>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Instantly generate professional Google Business review replies. Save time &amp; boost SEO.
+                    </p>
+
+                    <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+                        <ul class="flex gap-2">
+                            <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 border border-white/5">
+                                Auto-Reply</li>
+                            <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 border border-white/5">
+                                Analysis</li>
+                        </ul>
+
+                        <a href="https://adnanmuhammad4.gumroad.com/l/googlebussinessai" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-blue-400 transition-colors">
+                            Get Template <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                
-                <!-- Product 1: Review Response AI -->
-                <div class="group product-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="window.open('https://adnanmuhammad4.gumroad.com/l/googlebussinessai', '_blank')">
-                    <!-- Visual Mockup Area -->
-                    <div class="bg-gradient-to-br from-white/5 to-transparent p-8 h-64 relative flex items-center justify-center overflow-hidden border-b border-white/5 group-hover:bg-white/5 transition-colors duration-500">
-                        <!-- Abstract UI Card -->
-                        <div class="bg-[#0A0A0A] rounded-xl border border-white/10 p-5 w-full max-w-sm transform group-hover:scale-[1.02] transition-transform duration-500 shadow-2xl">
-                            <div class="flex items-start gap-3 mb-4">
-                                <div class="w-8 h-8 rounded-full bg-orange-900/30 border border-orange-500/20 flex items-center justify-center shrink-0 text-orange-400 font-bold text-xs">A</div>
-                                <div class="flex-1">
-                                    <div class="h-2 w-24 bg-white/10 rounded-full mb-1"></div>
-                                    <div class="flex gap-0.5">
-                                        <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
-                                        <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
-                                        <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
-                                        <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
-                                        <i data-lucide="star" class="w-3 h-3 fill-yellow-500 text-yellow-500"></i>
-                                    </div>
-                                </div>
-                                <div class="p-1.5 bg-green-500/10 rounded-md">
-                                    <svg class="w-4 h-4 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
-                                </div>
-                            </div>
-                            <div class="space-y-2 mb-4">
-                                <div class="h-2 w-full bg-white/5 rounded-full"></div>
-                                <div class="h-2 w-5/6 bg-white/5 rounded-full"></div>
-                            </div>
-                            <div class="bg-blue-500/10 rounded-lg p-3 border border-blue-500/20">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <i data-lucide="sparkles" class="w-3 h-3 text-blue-400"></i>
-                                    <span class="text-[10px] font-semibold text-blue-400 uppercase">AI Generated Reply</span>
-                                </div>
-                                <div class="space-y-1.5">
-                                    <div class="h-1.5 w-full bg-blue-400/20 rounded-full"></div>
-                                    <div class="h-1.5 w-full bg-blue-400/20 rounded-full"></div>
-                                    <div class="h-1.5 w-3/4 bg-blue-400/20 rounded-full"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Content -->
-                    <div class="p-8 flex flex-col flex-1">
-                        <div class="flex items-center gap-2 mb-3">
-                            <div class="p-1.5 bg-blue-500/10 border border-blue-500/20 rounded-md">
-                                <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i>
-                            </div>
-                            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wide">Reputation Management</span>
+
+            <!-- Product 2: AI Agent for Email -->
+            <div class="group product-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="window.open('https://adnanmuhammad4.gumroad.com/l/aiagentforemail', '_blank')">
+
+                <!-- Visual -->
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 h-64 relative flex items-center justify-center overflow-hidden border-b border-white/5 group-hover:bg-white/5 transition-colors duration-500">
+
+                    <div class="bg-[#0A0A0A] rounded-xl border border-white/10 p-5 w-full max-w-sm transform group-hover:scale-[1.02] transition-transform duration-500 shadow-2xl relative">
+
+                        <div class="absolute -right-4 top-12 bg-[#1a1a1a] border border-white/10 shadow-lg px-2 py-1 rounded-full flex items-center gap-1 z-20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                            <span class="text-[9px] text-gray-400">High Priority</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Review Response AI</h3>
-                        <p class="text-sm text-gray-400 mb-6 leading-relaxed">
-                            An AI-powered tool that instantly generates smart and professional Google Business review replies. Save time and boost local SEO.
-                        </p>
-                        <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
-                            <ul class="flex gap-2">
-                                <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 font-medium border border-white/5">Auto-Reply</li>
-                                <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 font-medium border border-white/5">Sentiment Analysis</li>
-                            </ul>
-                            <a href="https://adnanmuhammad4.gumroad.com/l/googlebussinessai" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-blue-400 transition-colors">
-                                Get Template <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                            </a>
+
+                        <div class="absolute -left-2 bottom-12 bg-[#1a1a1a] border border-white/10 shadow-lg px-2 py-1 rounded-full flex items-center gap-1 z-20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                            <span class="text-[9px] text-gray-400">Drafted</span>
+                        </div>
+
+                        <div class="flex flex-col gap-3">
+                            <div class="flex items-center gap-3 p-2 rounded-lg bg-white/5 border border-white/5">
+                                <div class="w-8 h-8 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="mail" class="w-4 h-4 text-purple-400"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="h-1.5 w-16 bg-white/20 rounded-full mb-1.5"></div>
+                                    <div class="h-1.5 w-24 bg-white/10 rounded-full"></div>
+                                </div>
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-2 rounded-lg border border-dashed border-white/10 opacity-60">
+                                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                                    <i data-lucide="mail" class="w-4 h-4 text-gray-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="h-1.5 w-16 bg-white/10 rounded-full mb-1.5"></div>
+                                    <div class="h-1.5 w-20 bg-white/5 rounded-full"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 2: AI Agent for Email -->
-                <div class="group product-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="window.open('https://adnanmuhammad4.gumroad.com/l/aiagentforemail', '_blank')">
-                    <!-- Visual Mockup Area -->
-                    <div class="bg-gradient-to-br from-white/5 to-transparent p-8 h-64 relative flex items-center justify-center overflow-hidden border-b border-white/5 group-hover:bg-white/5 transition-colors duration-500">
-                        <!-- Abstract UI Card -->
-                        <div class="bg-[#0A0A0A] rounded-xl border border-white/10 p-5 w-full max-w-sm transform group-hover:scale-[1.02] transition-transform duration-500 relative shadow-2xl">
-                            <!-- Floating badges -->
-                            <div class="absolute -right-4 top-12 bg-[#1a1a1a] border border-white/10 shadow-lg px-2 py-1 rounded-full flex items-center gap-1 z-20">
-                                <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-                                <span class="text-[9px] text-gray-400 font-medium">High Priority</span>
-                            </div>
-                            <div class="absolute -left-2 bottom-12 bg-[#1a1a1a] border border-white/10 shadow-lg px-2 py-1 rounded-full flex items-center gap-1 z-20">
-                                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-                                <span class="text-[9px] text-gray-400 font-medium">Response Drafted</span>
+                <!-- Info -->
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="p-1.5 bg-purple-500/10 border border-purple-500/20 rounded-md">
+                            <i data-lucide="inbox" class="w-4 h-4 text-purple-400"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-purple-400 uppercase tracking-wide">Inbox Zero</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-2">AI Agent for Email</h3>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Drafts, organizes, and responds to emails automatically. A complete inbox system.
+                    </p>
+
+                    <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+                        <ul class="flex gap-2">
+                            <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 border border-white/5">
+                                Gmail</li>
+                            <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 border border-white/5">
+                                Drafting</li>
+                        </ul>
+
+                        <a href="https://adnanmuhammad4.gumroad.com/l/aiagentforemail" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-purple-400 transition-colors">
+                            Get Template <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Product 3: AI LinkedIn Poster Creator -->
+            <div class="group product-card glass-card rounded-2xl overflow-hidden flex flex-col cursor-pointer" onclick="window.open('https://adnanmuhammad4.gumroad.com/l/AILinkedInpostercreator', '_blank')">
+
+                <!-- Visual -->
+                <div class="bg-gradient-to-br from-white/5 to-transparent p-8 h-64 relative flex items-center justify-center overflow-hidden border-b border-white/5 group-hover:bg-white/5 transition-colors duration-500">
+
+                    <div class="bg-[#0A0A0A] rounded-xl border border-white/10 p-5 w-full max-w-sm transform group-hover:scale-[1.02] transition-transform duration-500 shadow-2xl relative">
+
+                        <div class="absolute -right-4 top-12 bg-[#1a1a1a] border border-white/10 shadow-lg px-2 py-1 rounded-full flex items-center gap-1 z-20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                            <span class="text-[9px] text-gray-400">AI Toolkit</span>
+                        </div>
+
+                        <div class="absolute -left-2 bottom-12 bg-[#1a1a1a] border border-white/10 shadow-lg px-2 py-1 rounded-full flex items-center gap-1 z-20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                            <span class="text-[9px] text-gray-400">Auto Poster</span>
+                        </div>
+
+
+                        <div class="flex flex-col gap-3">
+
+                            <div class="flex items-center gap-3 p-2 rounded-lg bg-white/5 border border-white/5">
+                                <div class="w-8 h-8 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
+                                    <i data-lucide="image" class="w-4 h-4 text-blue-400"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="h-1.5 w-20 bg-white/20 rounded-full mb-1.5"></div>
+                                    <div class="h-1.5 w-28 bg-white/10 rounded-full"></div>
+                                </div>
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i>
                             </div>
 
-                            <div class="flex flex-col gap-3">
-                                <!-- Email Item 1 -->
-                                <div class="flex items-center gap-3 p-2 rounded-lg bg-white/5 border border-white/5">
-                                    <div class="w-8 h-8 rounded-full bg-purple-500/10 border border-purple-500/20 flex items-center justify-center shrink-0">
-                                        <i data-lucide="mail" class="w-4 h-4 text-purple-400"></i>
-                                    </div>
-                                    <div class="flex-1">
-                                        <div class="h-1.5 w-16 bg-white/20 rounded-full mb-1.5"></div>
-                                        <div class="h-1.5 w-24 bg-white/10 rounded-full"></div>
-                                    </div>
-                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i>
+                            <div class="flex items-center gap-3 p-2 rounded-lg border border-dashed border-white/10 opacity-60">
+                                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                                    <i data-lucide="image" class="w-4 h-4 text-gray-600"></i>
                                 </div>
-                                <!-- Email Item 2 -->
-                                <div class="flex items-center gap-3 p-2 rounded-lg border border-dashed border-white/10 opacity-60">
-                                    <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0">
-                                        <i data-lucide="mail" class="w-4 h-4 text-gray-600"></i>
-                                    </div>
-                                    <div class="flex-1">
-                                        <div class="h-1.5 w-16 bg-white/10 rounded-full mb-1.5"></div>
-                                        <div class="h-1.5 w-20 bg-white/5 rounded-full"></div>
-                                    </div>
+                                <div class="flex-1">
+                                    <div class="h-1.5 w-20 bg-white/10 rounded-full mb-1.5"></div>
+                                    <div class="h-1.5 w-24 bg-white/5 rounded-full"></div>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="p-8 flex flex-col flex-1">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="p-1.5 bg-blue-500/10 border border-blue-500/20 rounded-md">
+                            <i data-lucide="pen-tool" class="w-4 h-4 text-blue-400"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-blue-400 uppercase tracking-wide">AI Content Tools</span>
                     </div>
 
+                    <h3 class="text-xl font-bold text-white mb-2">AI LinkedIn Poster Creator</h3>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Auto-generate LinkedIn creatives, posters &amp; layouts. A complete visual content builder.
+                    </p>
+
+                    <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+                        <ul class="flex gap-2">
+                            <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 border border-white/5">
+                                Images</li>
+                            <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 border border-white/5">
+                                Layouts</li>
+                        </ul>
+
+                        <a href="https://adnanmuhammad4.gumroad.com/l/AILinkedInpostercreator" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-blue-400 transition-colors">
+                            Get Template <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+ 
                     <!-- Content -->
                     <div class="p-8 flex flex-col flex-1">
                         <div class="flex items-center gap-2 mb-3">
@@ -324,11 +461,35 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                
 
+            <!-- Content -->
+            <div class="p-8 flex flex-col flex-1">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="p-1.5 bg-purple-500/10 border border-purple-500/20 rounded-md">
+                        <i data-lucide="image" class="w-4 h-4 text-purple-400"></i>
+                    </div>
+                    <span class="text-xs font-semibold text-purple-400 uppercase tracking-wide">AI LinkedIn Poster Creator</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">AI LinkedIn Poster Creator</h3>
+                <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                    Generate stunning, algorithm-ready LinkedIn posters in seconds. Just input your idea and let AI create visually
+                    engaging designs for your personal brand.
+                </p>
+                <div class="mt-auto pt-6 border-t border-white/10 flex items-center justify-between">
+                    <ul class="flex gap-2">
+                        <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 font-medium border border-white/5">
+                            LinkedIn</li>
+                        <li class="bg-white/5 px-2 py-1 rounded text-[10px] text-gray-400 font-medium border border-white/5">Design
+                        </li>
+                    </ul>
+                    <a href="https://adnanmuhammad4.gumroad.com/l/AILinkedInpostercreator" target="_blank" class="flex items-center gap-2 text-sm font-semibold text-white hover:text-purple-400 transition-colors">
+                        Get Template <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        
+    
 
     <!-- Why Choose NextRelay -->
     <section id="features" class="py-24">
@@ -404,7 +565,7 @@
                     <div class="flex items-center justify-between mb-8">
                         <div>
                             <p class="text-sm font-medium text-gray-400">Featured Templates</p>
-                            <h3 class="text-3xl font-bold text-white mt-1">From $29</h3>
+                            <h3 class="text-3xl font-bold text-white mt-1">From $6 (₹599)</h3>
                         </div>
                         <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/5">
                             <i data-lucide="shopping-bag" class="w-6 h-6 text-white"></i>
@@ -417,6 +578,9 @@
                         </a>
                         <a href="https://adnanmuhammad4.gumroad.com/l/aiagentforemail" target="_blank" class="flex items-center justify-center w-full py-3 px-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-sm font-medium text-white transition-colors">
                             Buy AI Agent for Email
+                        </a>
+                        <a href="https://adnanmuhammad4.gumroad.com/l/AILinkedInpostercreator" target="_blank" class="flex items-center justify-center w-full py-3 px-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-sm font-medium text-white transition-colors">
+                            AI LinkedIn Poster Creator
                         </a>
                     </div>
                     <p class="text-[10px] text-gray-500 text-center mt-4">Secure payment via Gumroad</p>
@@ -457,9 +621,9 @@
                     <div>
                         <h4 class="text-xs font-semibold text-white mb-4">Support</h4>
                         <ul class="space-y-3">
-                           
-                            <li><a href="" class="text-xs text-gray-500 hover:text-white transition-colors">FAQ</a></li>
-                            <li><a href="mailto:nextrelaystudio@gmail.com" class="text-xs text-gray-500 hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="#" class="text-xs text-gray-500 hover:text-white transition-colors">Documentation</a></li>
+                            <li><a href="#" class="text-xs text-gray-500 hover:text-white transition-colors">FAQ</a></li>
+                            <li><a href="mailto:support@nextrelay.com" class="text-xs text-gray-500 hover:text-white transition-colors">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -468,211 +632,13 @@
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-[10px] text-gray-500">© 2026 NextRelay Studio. All rights reserved.</p>
                 <div class="flex gap-4">
-                   
-                    <a href="instagram.com/nextrelaystudio/" class="text-gray-500 hover:text-white transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    
+                    <a href="https://www.instagram.com/nextrelaystudio/" class="text-gray-500 hover:text-white transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-<style>
-  /* Widgetify Floating Button */
-  .widgetify-widget {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #050505;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    cursor: pointer;
-    transition: 0.3s ease;
-    z-index: 10000;
-    border: none;
-  }
-  .widgetify-widget:hover { transform: scale(1.05); }
 
-  /* Overlay */
-  .lead-popup-overlay {
-    position: fixed; top:0; left:0; width:100%; height:100%;
-    background: rgba(0,0,0,0.45);
-    display:none; justify-content:center; align-items:center;
-    z-index:10000; backdrop-filter:blur(3px);
-  }
-  .lead-popup-overlay.show { display:flex; }
-
-  /* Popup */
-  .widgetify-popup {
-    background:white; border-radius:16px;
-    width:90%; max-width:420px;
-    box-shadow:0 20px 40px rgba(0,0,0,0.1);
-    padding:28px;
-    animation:slideUp 0.28s ease;
-    position:relative;
-  }
-  @keyframes slideUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
-
-  .widgetify-close {
-    position:absolute; top:16px; right:16px;
-    background:none; border:none; font-size:24px;
-    cursor:pointer; color:#9ca3af;
-    width:32px; height:32px; border-radius:50%;
-  }
-
-  .lead-popup-title {
-    font-size:24px; font-weight:700; text-align:center; color:#111827;
-    margin-bottom:8px;
-  }
-  .lead-popup-subtitle {
-    font-size:15px; text-align:center; color:#6b7280;
-    margin-bottom:24px;
-  }
-
-  .lead-form-field {
-    width:100%; padding:14px;
-    border:1.8px solid #e5e7eb;
-    border-radius:12px;
-    margin-bottom:16px;
-    font-size:15px; outline:none;
-    transition:0.2s;
-  }
-  .lead-form-field:focus {
-    border-color:#050505;
-    box-shadow:0 0 0 3px #05050520;
-  }
-
-  .lead-form-button {
-    width:100%; padding:16px;
-    background:linear-gradient(135deg,#050505 0%,#050505dd 100%);
-    color:white; font-size:16px; font-weight:600;
-    border-radius:12px; border:none;
-    cursor:pointer; transition:0.3s;
-    display:flex; align-items:center; justify-content:center; gap:8px;
-  }
-  .lead-form-button:hover {
-    transform:translateY(-2px);
-    box-shadow:0 8px 25px #05050540;
-  }
-
-  .widgetify-watermark {
-    margin-top:16px; text-align:center;
-    font-size:11px; color:#6b7280;
-  }
-  .widgetify-watermark a { color:#6b7280; text-decoration:none; }
-</style>
-
-<!-- Floating Widget Button -->
-<button id="widgetify-button" class="widgetify-widget" aria-expanded="false">
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-  </svg>
-</button>
-
-<!-- Popup -->
-<div id="lead-capture-overlay" class="lead-popup-overlay">
-  <div id="widgetify-popup" class="widgetify-popup">
-
-    <button class="widgetify-close" id="widgetify-close">×</button>
-
-    <h2 class="lead-popup-title">Unlock AI-Powered Growth for Your Business</h2>
-    <p class="lead-popup-subtitle">
-      Share your details — we’ll analyze your workflow and show you how automation can save you time, money, and manual effort.
-    </p>
-
-    <!-- STRATEGIC FORM -->
-    <form id="lead-capture-form">
-
-      <input type="text" name="name" placeholder="Enter Your Name *" required="" class="lead-form-field">
-
-      <input type="tel" name="phone" placeholder="Your Best Contact Number *" required="" class="lead-form-field">
-
-      <input type="text" name="business" placeholder="Your Business / Industry" class="lead-form-field">
-
-      <textarea name="message" placeholder="What do you want us to automate? (Explain briefly)" rows="3" class="lead-form-field"></textarea>
-
-      <button type="submit" class="lead-form-button">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"></path>
-        </svg>
-        Get My Automation Plan
-      </button>
-    </form>
-
-    <div class="widgetify-watermark">
-      <a href="https://widgetify-two.vercel.app" target="_blank">Powered by Widgetify</a>
-    </div>
-  </div>
-</div>
-
-<script>
-(function () {
-  const widgetBtn = document.getElementById("widgetify-button");
-  const overlay = document.getElementById("lead-capture-overlay");
-  const popup = document.getElementById("widgetify-popup");
-  const closeBtn = document.getElementById("widgetify-close");
-  const form = document.getElementById("lead-capture-form");
-
-  // Your WhatsApp Number (with country code, no +)
-  const WHATSAPP = "919656778508";
-
-  function openPopup() {
-    overlay.classList.add("show");
-    widgetBtn.setAttribute("aria-expanded", "true");
-    popup.querySelector("input").focus();
-  }
-
-  function closePopup() {
-    overlay.classList.remove("show");
-    widgetBtn.setAttribute("aria-expanded", "false");
-  }
-
-  widgetBtn.addEventListener("click", () => {
-    overlay.classList.contains("show") ? closePopup() : openPopup();
-  });
-
-  closeBtn.addEventListener("click", closePopup);
-  overlay.addEventListener("click", (e) => { if (e.target === overlay) closePopup(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closePopup(); });
-
-  // Auto-show after 5s
-  setTimeout(() => {
-    if (!localStorage.getItem("leadPopupShown")) {
-      openPopup();
-      localStorage.setItem("leadPopupShown", "true");
-    }
-  }, 5000);
-
-  // Handle form submission
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const data = new FormData(form);
-    const name = data.get("name");
-    const phone = data.get("phone");
-    const business = data.get("business");
-    const message = data.get("message");
-
-    let text = "🤖 *New Automation Lead!*%0A%0A";
-    text += "👤 *Name:* " + encodeURIComponent(name) + "%0A";
-    text += "📞 *Phone:* " + encodeURIComponent(phone) + "%0A";
-    if (business) text += "🏢 *Business / Industry:* " + encodeURIComponent(business) + "%0A";
-    if (message) text += "⚙️ *Automation Needed:* " + encodeURIComponent(message) + "%0A";
-    text += "%0A⏰ *Time:* " + encodeURIComponent(new Date().toLocaleString());
-    text += "%0A%0A🚀 _Lead captured via AI Automation Widget_";
-
-    const url = "https://wa.me/" + WHATSAPP + "?text=" + text;
-
-    window.open(url, "_blank");
-
-    alert("✅ Thank you! Your automation request has been sent. We’ll contact you soon.");
-    closePopup();
-    form.reset();
-  });
-})();
-</script>
     <script>
         lucide.createIcons();
     </script>
