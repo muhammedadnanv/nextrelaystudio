@@ -295,18 +295,69 @@
 
     
     <!-- Trusted By -->
-    <section class="py-12 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-[10px] font-semibold text-gray-500 mb-8 uppercase tracking-widest">Powering AI Infrastructure for</p>
-            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-                <span class="text-lg font-semibold tracking-tighter text-white">Acme<span class="font-light text-gray-400">Corp</span></span>
-                <span class="text-lg font-bold tracking-tighter text-white italic">Spherule</span>
-                <span class="text-xl font-medium tracking-tight text-white">N<span class="text-pink-500">o</span>va</span>
-                <span class="text-lg font-semibold tracking-widest text-white">GLOBAL</span>
-                <span class="text-lg font-light tracking-tighter text-white">Nietzsche.ai</span>
+   <section class="py-12 border-y border-white/5 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="text-[10px] font-semibold text-gray-500 mb-8 uppercase tracking-widest">Powering AI Infrastructure for</p>
+
+        <!-- Slider Wrapper -->
+        <div class="relative w-full overflow-hidden">
+            <div class="flex whitespace-nowrap animate-slide">
+                
+                <!-- Brand List (Duplicated for seamless loop) -->
+                <div class="flex flex-nowrap items-center gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="text-lg font-semibold tracking-tighter text-white">Acme<span class="font-light text-gray-400">Corp</span></span>
+                    <span class="text-lg font-bold tracking-tighter text-white italic">Spherule</span>
+                    <span class="text-xl font-medium tracking-tight text-white">N<span class="text-pink-500">o</span>va</span>
+                    <span class="text-lg font-semibold tracking-widest text-white">GLOBAL</span>
+                    <span class="text-lg font-light tracking-tighter text-white">Nietzsche.ai</span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Orbit<span class="font-light text-gray-400">Labs</span></span>
+                    <span class="text-xl font-medium tracking-tight text-white italic">Hyper<span class="text-blue-400">Flux</span></span>
+                    <span class="text-lg font-light tracking-tight text-white">QuantaEdge</span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Prime<span class="text-gray-400">Works</span></span>
+                    <span class="text-xl font-bold tracking-tighter text-white">Astra<span class="text-purple-400">Mind</span></span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Zenith<span class="font-light text-gray-400">Studio</span></span>
+                    <span class="text-lg font-light tracking-tighter text-white">NeuraShift</span>
+                    <span class="text-lg font-semibold tracking-tighter text-white">Echo<span class="text-gray-400">Unit</span></span>
+                    <span class="text-xl font-medium tracking-tight text-white">Meta<span class="text-green-400">Arc</span></span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Cortex<span class="font-light text-gray-400">One</span></span>
+                </div>
+
+                <!-- Duplicate for seamless sliding -->
+                <div class="flex flex-nowrap items-center gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="text-lg font-semibold tracking-tighter text-white">Acme<span class="font-light text-gray-400">Corp</span></span>
+                    <span class="text-lg font-bold tracking-tighter text-white italic">Spherule</span>
+                    <span class="text-xl font-medium tracking-tight text-white">N<span class="text-pink-500">o</span>va</span>
+                    <span class="text-lg font-semibold tracking-widest text-white">GLOBAL</span>
+                    <span class="text-lg font-light tracking-tighter text-white">Nietzsche.ai</span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Orbit<span class="font-light text-gray-400">Labs</span></span>
+                    <span class="text-xl font-medium tracking-tight text-white italic">Hyper<span class="text-blue-400">Flux</span></span>
+                    <span class="text-lg font-light tracking-tight text-white">QuantaEdge</span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Prime<span class="text-gray-400">Works</span></span>
+                    <span class="text-xl font-bold tracking-tighter text-white">Astra<span class="text-purple-400">Mind</span></span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Zenith<span class="font-light text-gray-400">Studio</span></span>
+                    <span class="text-lg font-light tracking-tighter text-white">NeuraShift</span>
+                    <span class="text-lg font-semibold tracking-tighter text-white">Echo<span class="text-gray-400">Unit</span></span>
+                    <span class="text-xl font-medium tracking-tight text-white">Meta<span class="text-green-400">Arc</span></span>
+                    <span class="text-lg font-semibold tracking-tight text-white">Cortex<span class="font-light text-gray-400">One</span></span>
+                </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Tailwind Keyframes -->
+<style>
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-slide {
+  animation: slide 22s linear infinite;
+}
+</style>
+
 
     <!-- Bento Grid Features -->
     <section id="solutions" class="py-32 relative">
