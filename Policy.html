@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | NextRelay Studio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/png" href="image-removebg-preview.png" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #e5e5e5;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 4px;
+        }
+
+        .bg-glow {
+            background: radial-gradient(circle at 50% 0%, rgba(255, 79, 153, 0.15), transparent 45%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card-highlight {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 79, 153, 0.3);
+            box-shadow: 0 0 40px -10px rgba(255, 79, 153, 0.1);
+        }
+
+        .text-gradient-relay {
+            background: linear-gradient(to right, #FF4F99, #FF9F43);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .animate-fade-up {
+            animation: fadeUp .8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden selection:bg-pink-500/30 selection:text-pink-200">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-[#050505]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2.5">
+                <div class="w-8 h-8 bg-[#0C2D64] rounded-[6px] flex items-center justify-center">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-white"></i>
+                </div>
+                <div>
+                    <span class="text-sm font-bold text-white">NextRelay</span>
+                    <span class="block text-[10px] font-semibold text-gray-400 tracking-[0.18em] uppercase">Studio</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/" class="text-xs text-gray-400 hover:text-white">Home</a>
+                <a href="/about" class="text-xs text-gray-400 hover:text-white">About</a>
+                <a href="/privacy" class="text-xs text-white font-semibold">Privacy</a>
+            </div>
+
+            <a href="https://partners.relay.app/nextrelay-studio/contact"
+                class="bg-white text-black px-4 py-2 rounded-full text-xs font-semibold hover:bg-gray-200">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="pt-40 pb-20 relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[400px] bg-glow"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-5xl md:text-6xl font-medium text-white mb-6 animate-fade-up"
+                style="animation-delay: .1s;">
+                Privacy Policy
+            </h1>
+
+            <p class="text-lg text-gray-400 font-light max-w-2xl mx-auto animate-fade-up"
+                style="animation-delay: .2s;">
+                Learn how we handle, protect, and respect your data at NextRelay Studio.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- PRIVACY CONTENT -->
+    <section class="py-10 relative">
+        <div class="max-w-4xl mx-auto px-6 space-y-16">
+
+            <!-- Info Collection -->
+            <div class="glass-card rounded-3xl p-10 animate-fade-up" style="animation-delay: .3s;">
+                <h2 class="text-2xl font-medium text-white mb-4">Information We Collect</h2>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    We collect information to provide and improve our services. This may include:
+                </p>
+                <ul class="list-disc pl-6 text-gray-400 text-sm space-y-2">
+                    <li>Your name, email, phone number</li>
+                    <li>Business details you submit</li>
+                    <li>Workflow and automation requirements</li>
+                    <li>Technical information such as IP address or browser type</li>
+                </ul>
+            </div>
+
+            <!-- Usage -->
+            <div class="glass-card rounded-3xl p-10 animate-fade-up" style="animation-delay: .4s;">
+                <h2 class="text-2xl font-medium text-white mb-4">How We Use Your Information</h2>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    We use the information to deliver services effectively. This includes:
+                </p>
+                <ul class="list-disc pl-6 text-gray-400 text-sm space-y-2">
+                    <li>Creating and customizing automation workflows</li>
+                    <li>Processing your inquiries or project requests</li>
+                    <li>Improving our service quality and reliability</li>
+                    <li>Keeping communication clear and consistent</li>
+                </ul>
+            </div>
+
+            <!-- Sharing -->
+            <div class="glass-card rounded-3xl p-10 animate-fade-up" style="animation-delay: .5s;">
+                <h2 class="text-2xl font-medium text-white mb-4">Information Sharing</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    We do not sell your data. We only share information when necessary to provide our services such as:
+                </p>
+                <ul class="list-disc pl-6 text-gray-400 text-sm space-y-2 mt-4">
+                    <li>Trusted tools like Relay.app for workflow execution</li>
+                    <li>Communication or integration platforms you authorize</li>
+                    <li>Legal authorities if required</li>
+                </ul>
+            </div>
+
+            <!-- Security -->
+            <div class="glass-card rounded-3xl p-10 animate-fade-up" style="animation-delay: .6s;">
+                <h2 class="text-2xl font-medium text-white mb-4">Data Security</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    We use strong technical and procedural safeguards to protect your data including access
+                    controls, encrypted communication, and modern software security standards.
+                </p>
+            </div>
+
+            <!-- Rights -->
+            <div class="glass-card rounded-3xl p-10 animate-fade-up" style="animation-delay: .7s;">
+                <h2 class="text-2xl font-medium text-white mb-4">Your Rights</h2>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    You may request the following anytime:
+                </p>
+                <ul class="list-disc pl-6 text-gray-400 text-sm space-y-2">
+                    <li>Access to your data</li>
+                    <li>Corrections to your information</li>
+                    <li>Removal of your stored data</li>
+                    <li>Details on how your information is used</li>
+                </ul>
+            </div>
+
+            <!-- Updates -->
+            <div class="glass-card rounded-3xl p-10 animate-fade-up" style="animation-delay: .8s;">
+                <h2 class="text-2xl font-medium text-white mb-4">Updates to This Policy</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    We may update this Privacy Policy as our services evolve. Updated versions will be posted
+                    on this page.
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="glass-card-highlight rounded-3xl p-10 animate-fade-up" style="animation-delay: .9s;">
+                <h2 class="text-3xl font-medium text-gradient-relay mb-4">Contact Us</h2>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    For any privacy questions or requests, contact us at:
+                </p>
+                <p class="text-gray-300 text-sm mt-4">
+                    <span class="text-white font-semibold">Email:</span>
+                    nextrelaystudio@gmail.com
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 bg-[#030303] pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs text-gray-500">© 2026 NextRelay Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        lucide.createIcons({
+            attrs: { 'stroke-width': 1.5 }
+        })
+    </script>
+
+</body>
+</html>
